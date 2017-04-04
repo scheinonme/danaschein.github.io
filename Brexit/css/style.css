@@ -1,11 +1,44 @@
-div#container {height:500px;width:500px;}
+/*body {
+  background-color: blue;
+}*/
 
-div.a {
-width: 50px;
-height:50px;
- background-color:red;
-position:fixed;
-    top:100px;
-    left:100px;
+h1 {
+  display: inline-block;
+}
+
+.container {
+ /* border: 1px dashed gray;*/
+ /* height: 40px;*/
+  position: absolute;
+  left: 0px;
+  width: 68%;
+  top: 21%;
+}
 
 
+.box2 {
+  width: 10%;
+  float: right;
+  
+}
+
+.uk {
+  width: 100%
+}
+
+.box1 {
+  background-color: red;
+  right: 0;
+}
+
+.box2 {
+  position: relative;
+}
+
+.europe {
+  text-align: right;
+}
+
+.europe img {
+  width: 50%;
+}

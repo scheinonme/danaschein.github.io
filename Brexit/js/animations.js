@@ -1,49 +1,21 @@
-$(document).ready(function() {
-    animateDiv($('.a'));
+// var offset = $('.box2').offset();
+// var leftOffset = offset.left;
 
+// $('.box2').animate({
+//   left: -leftOffset
+// }, 10000);
 
-});
+// $(".draggable").draggable({
+//   containment: ".container",
+//   start: function() {
+//     $('.box2').stop();
+//   },
+//   stop: function() {
+//     offset = $('.box2').offset();
+//     leftOffset = offset.left;
 
-function makeNewPosition($container) {
-
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $container.height() - 10;
-    var w = $container.width() - 10;
-
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-
-    return [nh, nw];
-
-}
-
-function animateDiv($target) {
-    var newq = makeNewPosition($target.parent());
-    var oldq = $target.offset();
-    var speed = calcSpeed([oldq.top, oldq.left], newq);
-
-    $target.animate({
-        top: newq[0],
-        left: newq[1]
-    }, speed, function() {
-        animateDiv($target);
-    });
-
-};
-
-function calcSpeed(prev, next) {
-
-    var x = Math.abs(prev[1] - next[1]);
-    var y = Math.abs(prev[0] - next[0]);
-
-    var greatest = x > y ? x : y;
-
-    var speedModifier = 0.03;
-
-    var speed = Math.ceil(greatest / speedModifier);
-
-    return speed;
-
-}
-
-
+//     $('.box2').animate({
+//       left: -leftOffset
+//     }, 10000);
+//   }
+// });
