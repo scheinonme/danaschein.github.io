@@ -1,6 +1,6 @@
-/*body {
-  background-color: blue;
-}*/
+body {
+  background-color: #DCF0F5;
+}
 
 h1 {
   display: inline-block;
@@ -11,8 +11,8 @@ h1 {
  /* height: 40px;*/
   position: absolute;
   left: 0px;
-  width: 68%;
-  top: 21%;
+  width: 64%;
+  top: 25%;
 }
 
 
